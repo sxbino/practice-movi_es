@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato:400,700,900&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.page-menu {
+	height: 70px;
+	width: 100%;
+	box-shadow: 0 1px 15px rgb(212, 212, 212);
+	display: flex;
+	align-items: center;
+}
+.page-logo {
+	display: flex;
+	align-items: flex-end;
+	padding-left: 3%;
+}
+.page-logo p {
+	margin: 0;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	font-size: 24px;
+	color: #fb736c;
+	font-family: 'Bowlby One SC', cursive;
+}
+.page-logo img {
+	width: 60px;
+}
+.menu-options {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+}
+.page-search {
+	width: 90%;
+	justify-self: center;
+	align-self: flex-end;
+	text-align: center;
+	height: 40px;
+}
+.page-search input {
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid #c5c5c5;
+	box-sizing: border-box;
+	text-align: center;
+}
+.user-profile {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 10%;
+}
+.menu-options .user-profile p {
+	margin: 0;
+	margin-right: 10px;
+	font-size: 21px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+.menu-options .user-profile img {
+	width: 55px;
+	border-radius: 50%;
+}
+.movies {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 75px 1fr;
+	gap: 40px;
+}
+.aside {
+	display: grid;
+	grid-template-rows: repeat(7, 1fr);
+	background: rgb(253, 84, 91);
+	background: linear-gradient(90deg, rgba(253, 84, 91, 1) 0%, rgba(251, 115, 108, 1) 77%);
+	align-items: center;
+}
+.aside figure {
+	display: flex;
+	margin: 0 auto;
+	width: 50px;
+}
+.icon img {
+	width: 50px;
+	height: 50px;
+}
+.aside .home p,
+.aside .trending p,
+.aside .likes p,
+.aside .ajustes p {
+	margin: 0;
+	margin-top: 10px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	text-align: center;
+}
+.aside .ajustes {
+	grid-row: 7;
+}
+.movie-info {
+	display: grid;
+	grid-template-columns: repeat(autofill, 30%);
+	grid-template-rows: 25px 1fr 25px 1fr 25px 1fr;
+	column-gap: 20px;
+	row-gap: 10px;
+	padding-top: 20px;
+	padding-right: 30px;
+}
+.recomendado {
+	grid-column: span 3;
+	font-size: 22px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	align-self: center;
+}
+.recomendado p {
+	margin: 0;
+}
+.movie-img {
+	display: flex;
+	align-items: flex-end;
+	background-image: url('../images/poster.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 1px 1px 15px rgb(192, 192, 192);
+	height: 250px;
+}
+.movie-description {
+	font-size: 14px;
+	color: white;
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+	background-color: rgba(251, 115, 108, 0.7);
+	padding: 10px;
+}
+.movie-description h4,
+.movie-description p {
+	margin: 0;
+	padding: 5px;
+}

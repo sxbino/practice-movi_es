@@ -1,0 +1,42 @@
+@media (max-width: 650px) {
+	.menu-options .user-profile p {
+		display: none;
+	}
+	.user-profile {
+		justify-content: center;
+		padding-right: 10%;
+	}
+	.page-search {
+		width: 95%;
+	}
+	.page-search input {
+		width: 95%;
+	}
+	.menu-options {
+		display: grid;
+		grid-template-columns: 1fr 2fr 60px;
+	}
+	.movie-info {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 25px 1fr 1fr 25px;
+		column-gap: 20px;
+		row-gap: 10px;
+		padding-top: 20px;
+		padding-right: 30px;
+	}
+	.recomendado {
+		grid-column: span 2;
+	}
+}
+@media (max-width: 1048px) {
+	.menu-options .user-profile p {
+		font-size: 18px;
+	}
+	.movie-description {
+		width: 100%;
+	}
+	.movie-description p {
+		display: none;
+	}
+}
